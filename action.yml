@@ -1,0 +1,13 @@
+name: "Xcode Select Version"
+author: Sebastian Messingfeld
+description: "Selects an installed Xcode version on the runner"
+branding:
+  icon: 'check-circle'
+  color: 'orange'
+inputs:
+  xcode-select-version:
+    description: "Switch Xcode to the given version"
+    required: true
+runs:
+  using: 'node16'
+  main: 'main.js'

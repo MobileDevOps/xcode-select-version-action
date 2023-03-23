@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  main:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest]
+        xcode-select-version: ["14.2", "14.1", "13.2.1"]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Xcode Select Version
+        uses: ./
+        with:
+          xcode-select-version: ${{ matrix.xcode-select-version }}
+      - run: xcodebuild -version 

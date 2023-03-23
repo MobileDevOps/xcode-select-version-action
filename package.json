@@ -1,0 +1,24 @@
+{
+  "name": "xcode-select-version-action",
+  "version": "1.0.0",
+  "description": "This action sets the Xcode version to use for subsequent steps in a workflow.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobileDevOps/xcode-select-version-action.git"
+  },
+  "keywords": ["xcode", "version", "action", "github", "actions", "workflow"],
+  "author": "Sebastian Messingfeld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MobileDevOps/xcode-select-version-action/issues"
+  },
+  "homepage": "https://github.com/MobileDevOps/xcode-select-version-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
