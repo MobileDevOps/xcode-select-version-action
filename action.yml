@@ -9,5 +9,5 @@ inputs:
     description: "Switch Xcode to the given version"
     required: true
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'main.js'
